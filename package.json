@@ -1,5 +1,5 @@
 {
-  "name": "react0-calendar",
+  "name": "react-ts-calendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,9 +10,11 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "sass-convert": "^0.5.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },

@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f4f2e7;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.hz-datepicker {
+  border-spacing: 0;
+  color: #787878;
+  background: white;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+.hz-datepicker thead tr:first-child {
+  background: #008080;
+}
+.hz-datepicker th {
+  color: white;
+  height: 64px;
+}
+.hz-datepicker td {
+  text-align: center;
+  vertical-align: middle;
+  width: 52px;
+  height: 52px;
+  outline: none;
+}
+.hz-datepicker td.day:not(.grayed):not(.selected) {
+  cursor: pointer;
+}
+.hz-datepicker td.day:not(.grayed):not(.selected).cursor {
+  background: #eee;
+  border-radius: 50%;
+}
+.hz-datepicker td.grayed {
+  color: #ccc;
+  border-radius: 50%;
+}
+.hz-datepicker td.selected {
+  color: white;
+  background: #008080;
+  border-radius: 50%;
+  outline: none;
+}
+.hz-datepicker td.today:not(.selected) {
+  color: #008080;
+  border: none;
+}
+.hz-datepicker .weekdays {
+  color: #008080;
+}
+.hz-datepicker .chevron {
+  cursor: pointer;
+  user-select: none;
+  font-size: 2.5em;
+  margin-top: -0.1em;
+  transition: color 0.2s ease-in-out;
+}
+.hz-datepicker .chevron:hover {
+  color: #ccc;
 }
