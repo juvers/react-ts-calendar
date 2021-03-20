@@ -7,6 +7,7 @@ body {
 }
 
 .wrapper {
+  /* display: flex; */
   margin: 0 auto;
   width: 400px;
 }
@@ -32,17 +33,25 @@ body {
   width: 52px;
   height: 52px;
   outline: none;
+  
 }
 .hz-datepicker td.day:not(.grayed):not(.selected) {
   cursor: pointer;
+
+  /* add classes to prevent selection */
+  /* cursor: not-allowed;
+  user-select: none; */
 }
 .hz-datepicker td.day:not(.grayed):not(.selected).cursor {
   background: #eee;
   border-radius: 50%;
+  
 }
 .hz-datepicker td.grayed {
   color: #ccc;
   border-radius: 50%;
+  /* cursor: not-allowed;
+  user-select: none; */
 }
 .hz-datepicker td.selected {
   color: white;
